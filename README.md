@@ -40,6 +40,8 @@ The project is created **for academic purposes only** and is **not an official w
 - The website is **not a real or official website**
 - Content is for **educational purposes only**
 
+## 🔗 Website URL: <a href="https://uypudding.github.io/gia-tri-song-va-dao-duc/">https://uypudding.github.io/gia-tri-song-va-dao-duc/</a>
+
 ## Notes
 
 This project is created for learning and practice.  
