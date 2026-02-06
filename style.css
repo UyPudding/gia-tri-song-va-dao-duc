@@ -1,0 +1,188 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    line-height: 1.8;
+    background-color: #fff5f8;
+    color: #444;
+    padding-top: 85px;
+    font-size: 20px;
+    /* Nội dung chính to rõ */
+}
+
+/* THANH MENU */
+header {
+    background: linear-gradient(135deg, #ff85a1 0%, #d81b60 100%);
+    padding: 12px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-right: 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    /* GIẢM THEO Ý BẠN */
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.search-box {
+    background: white;
+    padding: 5px 15px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.search-box input {
+    border: none;
+    outline: none;
+    width: 150px;
+    font-size: 14px;
+}
+
+.search-icon {
+    cursor: pointer;
+}
+
+.auth-links {
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    /* GIẢM THEO Ý BẠN */
+}
+
+.auth-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.auth-links a:hover {
+    text-decoration: underline;
+}
+
+/* CHỮ ĐÈ TRÊN ẢNH (TRANG CHỦ) */
+.hero-section {
+    position: relative;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('https://file3.qdnd.vn/data/images/0/2024/04/24/upload_2072/thi%20sinh%202.jpg?dpi=150&quality=100&w=870');
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    margin: 0 20px 40px 20px;
+    text-align: center;
+}
+
+.hero-overlay h1 {
+    color: white !important;
+    font-size: 4.5rem;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.8);
+}
+
+.hero-overlay p {
+    color: white !important;
+    /* Chuyển dòng chữ nhỏ sang trắng */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    /* Thêm bóng cho dễ đọc */
+    font-size: 20px;
+    /* Kích thước chữ nhỏ */
+}
+
+main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    border-radius: 20px;
+}
+
+.content-flex {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin: 40px 0;
+    padding: 20px;
+}
+
+.content-flex.reverse {
+    flex-direction: row-reverse;
+}
+
+.text-side {
+    flex: 1;
+}
+
+.image-side {
+    flex: 1;
+    text-align: center;
+}
+
+.side-img {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    border-radius: 10px;
+}
+
+h2 {
+    color: #ad1457;
+    border-left: 6px solid #ff85a1;
+    padding-left: 15px;
+    margin-bottom: 20px;
+    font-size: 38px;
+    /* Giữ to rõ */
+}
+
+.situation-card {
+    background: #fff0f3;
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    border: 1px dashed #ff85a1;
+}
+
+/* PHẦN LIÊN HỆ - GIẢM THEO Ý BẠN */
+#lienhe p {
+    font-size: 16px;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background: #333;
+    color: #ff85a1;
+    margin-top: 50px;
+    font-size: 14px;
+}

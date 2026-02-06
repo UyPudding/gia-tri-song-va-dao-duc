@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký thành viên - Giá trị sống</title>
+    <link rel="stylesheet" href="style.css"> <style>
+        /* Tùy chỉnh thêm một chút cho form đăng ký */
+        .auth-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #fff0f6;
+        }
+        .auth-card {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(255, 133, 161, 0.2);
+            width: 100%;
+            max-width: 450px;
+            text-align: center;
+        }
+        .auth-card h2 {
+            color: #d81b60;
+            margin-bottom: 25px;
+            border-bottom: none; 
+        }
+        .form-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #ad1457;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #f8bbd0;
+            border-radius: 10px;
+            outline: none;
+        }
+        .form-group input:focus {
+            border-color: #ff85a1;
+            box-shadow: 0 0 5px rgba(255, 133, 161, 0.3);
+        }
+        .btn-submit {
+            background: #ff85a1;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 25px;
+            font-weight: bold;
+            cursor: pointer;
+            width: 100%;
+            font-size: 1rem;
+            transition: 0.3s;
+        }
+        .btn-submit:hover {
+            background: #d81b60;
+        }
+        .back-home {
+            margin-top: 20px;
+            display: block;
+            color: #ad1457;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="auth-container">
+        <div class="auth-card">
+            <h2>ĐĂNG KÝ THÀNH VIÊN</h2>
+            <form onsubmit="return handleRegister(event)">
+                <div class="form-group">
+                    <label>Họ và tên</label>
+                    <input type="text" id="fullname" placeholder="Nhập họ tên của bạn" required>
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" id="email" placeholder="example@gmail.com" required>
+                </div>
+                <div class="form-group">
+                    <label>Mật khẩu</label>
+                    <input type="password" id="password" placeholder="Nhập mật khẩu" required>
+                </div>
+                <div class="form-group">
+                    <label>Xác nhận mật khẩu</label>
+                    <input type="password" id="repassword" placeholder="Nhập lại mật khẩu" required>
+                </div>
+                
+                <button type="submit" class="btn-submit">Đăng ký ngay</button>
+            </form>
+            
+            <p style="margin-top: 15px; font-size: 0.9rem;">
+                Đã có tài khoản? <a href="dangnhap.html" style="color: #d81b60; font-weight: bold;">Đăng nhập</a>
+            </p>
+            <a href="index.html" class="back-home">← Quay lại Trang chủ</a>
+        </div>
+    </div>
+
+    <script>
+        function handleRegister(event) {
+            event.preventDefault(); // Ngăn trang web load lại
+            
+            const pass = document.getElementById('password').value;
+            const repass = document.getElementById('repassword').value;
+            const name = document.getElementById('fullname').value;
+
+            if (pass !== repass) {
+                alert("Mật khẩu xác nhận không khớp. Vui lòng kiểm tra lại!");
+            } else {
+                alert("Chúc mừng " + name + " đã đăng ký thành công!");
+                window.location.href = "dangnhap.html"; // Chuyển sang trang đăng nhập sau khi đăng ký thành công
+            }
+        }
+    </script>
+</body>
+</html>
